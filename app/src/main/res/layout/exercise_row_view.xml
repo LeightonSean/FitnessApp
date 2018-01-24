@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtWorkout"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.24"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="(Workout)"
+            tools:text="(Workout)" />
+
+        <EditText
+            android:id="@+id/nTxtWeight"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tvExercises"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            tools:text="lbs" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/nTextSets"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            tools:text="sets" />
+
+        <EditText
+            android:id="@+id/nTextReps"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:text="reps" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Completed" />
+
+</LinearLayout>
