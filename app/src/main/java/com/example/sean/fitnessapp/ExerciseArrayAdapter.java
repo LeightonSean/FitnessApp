@@ -11,6 +11,8 @@ import android.widget.CheckBox;
 import android.view.View;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+
 /**
  * Created by seanleighton on 1/10/18.
  */
@@ -18,6 +20,7 @@ import android.widget.ListView;
 public class ExerciseArrayAdapter extends ArrayAdapter<Exercise> {
 
     private Exercise[] _data;
+    private ArrayList<Exercise> _data2;
     private Context _context;
 
 
@@ -39,7 +42,11 @@ public class ExerciseArrayAdapter extends ArrayAdapter<Exercise> {
 
         View rowView = inflater.inflate(R.layout.view_workout, parentView, false);
 
-        ListView lv = (ListView)rowView.findViewById(R.id.lvWeekExercise);
+        ListView lv = (ListView)rowView.findViewById(R.id.lvDayExercise);
+
+        Exercise e = _data[position];
+
+
 
 
         return rowView;

@@ -17,7 +17,9 @@ public class ExerciseViewBrain extends AppCompatActivity implements View.OnClick
     @Override
     public void onClick(View view){
 
-        _exerciseData = (ListView)findViewById(R.id.lvWeekExercise);
+        _exerciseData = (ListView)findViewById(R.id.lvDayExercise);
+
+
 
     }
 
@@ -26,6 +28,9 @@ public class ExerciseViewBrain extends AppCompatActivity implements View.OnClick
 
 
 }
+
+
+
 
 
 
